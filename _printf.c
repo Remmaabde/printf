@@ -1,14 +1,13 @@
 #include "holberton.h"
 #include <stdlib.h>
 int print_helper(printh_t *help_s, va_list args);
-printh_t *init_help_s(const char *, va_list args):
+printh_t *init_help_s(const char *, va_list args) :
 /**
  * _printf - Prints variatic arguments based on format string.
  * @format: String passed, may contain zero, or more directives.
  *
  * Return: Number of characters printed to stdout.
  */
- 
 int _printf(const char *format, ...)
 {
 	int E;
@@ -125,7 +124,7 @@ int print_helper(printh_t *help_s, va_list args)
  * @format: pointer to format specifier string to set as pointer
  * @args: va_list pointer, will be sent to free_all to have memory freed if a
  * malloc fails.
- * 
+ *
  * Return: pointer to structure created in memory
  */
 printh_t *init_help_s(const char *format, va_list args)
